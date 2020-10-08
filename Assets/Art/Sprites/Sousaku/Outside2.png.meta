@@ -3947,8 +3947,8 @@ TextureImporter:
         y: 192
         width: 96
         height: 144
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.49999967, y: 0.023018837}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -4298,8 +4298,8 @@ TextureImporter:
         y: 240
         width: 48
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.48587164, y: 0.11301199}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -4348,8 +4348,8 @@ TextureImporter:
         y: 192
         width: 48
         height: 96
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.48848978, y: 0.028773466}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -4543,8 +4543,8 @@ TextureImporter:
         y: 192
         width: 96
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.49999937, y: 0.14962356}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -4576,8 +4576,8 @@ TextureImporter:
         y: 192
         width: 48
         height: 48
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.47174454, y: 0.0706323}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -4773,8 +4773,8 @@ TextureImporter:
         y: 1
         width: 96
         height: 192
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5057545, y: 0.023018917}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -4814,8 +4814,8 @@ TextureImporter:
         y: 0
         width: 192
         height: 192
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.51150924, y: 0.028773785}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape:
@@ -5016,8 +5016,8 @@ TextureImporter:
         y: 0
         width: 96
         height: 192
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.5000003, y: 0.019302607}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
