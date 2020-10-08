@@ -9968,7 +9968,7 @@ PrefabInstance:
     - target: {fileID: 8694053878972414043, guid: 28697412e81eafd469b7f617786eb226,
         type: 3}
       propertyPath: m_Name
-      value: Ruby
+      value: Nekomata
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28697412e81eafd469b7f617786eb226, type: 3}
