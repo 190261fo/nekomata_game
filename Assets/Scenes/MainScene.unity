@@ -10906,7 +10906,7 @@ MonoBehaviour:
   suppressBlockAutoSelect: 1
   tagFilter:
   - Player
-  FireOn: -1
+  FireOn: 1
   collisionVar: {fileID: 0}
 --- !u!4 &1449400671
 Transform:
