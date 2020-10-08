@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 78710592_p1_master1200_transparent_233
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 27913032856387254, guid: 2416cae38832ac84f9778352598f6f99, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.7294118, g: 0.7294118, b: 0.7294118, a: 1}
   m_Transform:
     e00: 1
     e01: 0

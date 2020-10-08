@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 78710592_p1_master1200_transparent_246
+  m_Name: 78710592_p1_master1200_transparent_246 1
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: -5636066630610291863, guid: 2416cae38832ac84f9778352598f6f99,
     type: 3}
