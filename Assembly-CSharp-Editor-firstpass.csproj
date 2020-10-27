@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{85CB89FD-79C2-2967-2F70-BC850ACB8BB8}</ProjectGuid>
+    <ProjectGuid>{46F5A95A-1143-603A-5E02-8EF6A3A2FAB2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor-firstpass</AssemblyName>
@@ -727,31 +727,31 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Fungus.FungusLuaEditor.csproj">
-      <Project>{1BE3BF13-9E9C-50A3-6BEA-CE963C124DC1}</Project>
+      <Project>{B810FD57-6906-34C3-76BB-63F786794F5C}</Project>
       <Name>Fungus.FungusLuaEditor</Name>
     </ProjectReference>
     <ProjectReference Include="FungusEditor.csproj">
-      <Project>{04B66C36-12BE-D102-1709-2BB3002813C5}</Project>
+      <Project>{3E5F461F-0971-4031-658D-EEE52EEAA91B}</Project>
       <Name>FungusEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Fungus.LineEndingsEditor.csproj">
-      <Project>{7CB179F2-0F40-9E31-F8B0-DBF9AF02409C}</Project>
+      <Project>{A1A1109B-3BDF-93AA-841A-7B8F80B8FF0D}</Project>
       <Name>Fungus.LineEndingsEditor</Name>
     </ProjectReference>
     <ProjectReference Include="FungusExamples.csproj">
-      <Project>{B4B202AA-5254-1DBA-A2FE-D69735F1D8F1}</Project>
+      <Project>{82D4A53E-93E0-773D-C7DB-16A2AC946805}</Project>
       <Name>FungusExamples</Name>
     </ProjectReference>
     <ProjectReference Include="Fungus.csproj">
-      <Project>{5D477F76-4D6A-90E2-1A87-BDDFD7093E54}</Project>
+      <Project>{97B16EFD-DD00-FC5E-D21A-92E5805F23A5}</Project>
       <Name>Fungus</Name>
     </ProjectReference>
     <ProjectReference Include="Fungus.UsfxrEditor.csproj">
-      <Project>{AE519699-B43C-08F0-BDF2-CD20EFF1582F}</Project>
+      <Project>{21B49BC9-56A6-EF01-5381-6FA01BA54816}</Project>
       <Name>Fungus.UsfxrEditor</Name>
     </ProjectReference>
     <ProjectReference Include="Fungus.FungusLuaJSONCheckerEditor.csproj">
-      <Project>{E3E142CD-A74A-6175-59B7-42FB1E15E893}</Project>
+      <Project>{C5DF52D3-A2E9-B306-3394-217725CBDFC1}</Project>
       <Name>Fungus.FungusLuaJSONCheckerEditor</Name>
     </ProjectReference>
   </ItemGroup>

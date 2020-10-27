@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E3E142CD-A74A-6175-59B7-42FB1E15E893}</ProjectGuid>
+    <ProjectGuid>{C5DF52D3-A2E9-B306-3394-217725CBDFC1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Fungus.FungusLuaJSONCheckerEditor</AssemblyName>
@@ -635,7 +635,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Fungus.csproj">
-      <Project>{5D477F76-4D6A-90E2-1A87-BDDFD7093E54}</Project>
+      <Project>{97B16EFD-DD00-FC5E-D21A-92E5805F23A5}</Project>
       <Name>Fungus</Name>
     </ProjectReference>
   </ItemGroup>

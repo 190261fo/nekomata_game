@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{AE519699-B43C-08F0-BDF2-CD20EFF1582F}</ProjectGuid>
+    <ProjectGuid>{21B49BC9-56A6-EF01-5381-6FA01BA54816}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Fungus.UsfxrEditor</AssemblyName>
@@ -635,7 +635,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Fungus.csproj">
-      <Project>{5D477F76-4D6A-90E2-1A87-BDDFD7093E54}</Project>
+      <Project>{97B16EFD-DD00-FC5E-D21A-92E5805F23A5}</Project>
       <Name>Fungus</Name>
     </ProjectReference>
   </ItemGroup>

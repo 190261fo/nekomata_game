@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{1BE3BF13-9E9C-50A3-6BEA-CE963C124DC1}</ProjectGuid>
+    <ProjectGuid>{B810FD57-6906-34C3-76BB-63F786794F5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Fungus.FungusLuaEditor</AssemblyName>
@@ -641,7 +641,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Fungus.csproj">
-      <Project>{5D477F76-4D6A-90E2-1A87-BDDFD7093E54}</Project>
+      <Project>{97B16EFD-DD00-FC5E-D21A-92E5805F23A5}</Project>
       <Name>Fungus</Name>
     </ProjectReference>
   </ItemGroup>

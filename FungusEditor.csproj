@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{04B66C36-12BE-D102-1709-2BB3002813C5}</ProjectGuid>
+    <ProjectGuid>{3E5F461F-0971-4031-658D-EEE52EEAA91B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>FungusEditor</AssemblyName>
@@ -709,7 +709,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Fungus.csproj">
-      <Project>{5D477F76-4D6A-90E2-1A87-BDDFD7093E54}</Project>
+      <Project>{97B16EFD-DD00-FC5E-D21A-92E5805F23A5}</Project>
       <Name>Fungus</Name>
     </ProjectReference>
   </ItemGroup>

@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{64E6C1B1-6EE1-EF3F-D936-AD069EEE403C}</ProjectGuid>
+    <ProjectGuid>{47C96CDF-8EE1-87DA-24A8-E2382F1548CD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>FungusPlayModeTests</AssemblyName>
@@ -608,15 +608,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Fungus.csproj">
-      <Project>{5D477F76-4D6A-90E2-1A87-BDDFD7093E54}</Project>
+      <Project>{97B16EFD-DD00-FC5E-D21A-92E5805F23A5}</Project>
       <Name>Fungus</Name>
     </ProjectReference>
     <ProjectReference Include="FungusEditor.csproj">
-      <Project>{04B66C36-12BE-D102-1709-2BB3002813C5}</Project>
+      <Project>{3E5F461F-0971-4031-658D-EEE52EEAA91B}</Project>
       <Name>FungusEditor</Name>
     </ProjectReference>
     <ProjectReference Include="FungusEditorTests.csproj">
-      <Project>{981EDFDA-4C11-71B6-5F0E-B8CD29903DEA}</Project>
+      <Project>{6A83F1BA-4C8F-C9D6-FB11-740C4601FAE6}</Project>
       <Name>FungusEditorTests</Name>
     </ProjectReference>
   </ItemGroup>
