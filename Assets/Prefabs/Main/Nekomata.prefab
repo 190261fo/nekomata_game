@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 753491593826466343}
   - component: {fileID: 4429791255419297445}
   - component: {fileID: 40637501731373576}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Nekomata
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -140,8 +140,8 @@ BoxCollider2D:
   m_Offset: {x: 0.010805316, y: 0.11451974}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.52770114, y: 0.021550205}
-    oldSize: {x: 2.32, y: 2.33}
+    pivot: {x: 0.5133275, y: 0.024152316}
+    oldSize: {x: 1, y: 1.0043104}
     newSize: {x: 1.28, y: 1.28}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
