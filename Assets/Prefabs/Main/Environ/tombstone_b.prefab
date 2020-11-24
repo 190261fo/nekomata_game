@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2106016173736435682}
   - component: {fileID: 2106016173736435683}
   m_Layer: 0
-  m_Name: tombstone_b
+  m_Name: Tombstone_b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -72,13 +72,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1142946837452661760, guid: dfecf2c18658c0b41872cd6a4c6047a1,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: e2460cc5a71983545b81fb000d763ef7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.5, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -97,16 +96,16 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008347392, y: 0.018374443}
+  m_Offset: {x: 0.001947999, y: 0.07078743}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.51337814, y: 0.32043648}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
+    pivot: {x: 0.4915551, y: 0.13928089}
+    oldSize: {x: 0.5, y: 0.5}
+    newSize: {x: 0.5, y: 0.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.81560254, y: 0.44952965}
+  m_Size: {x: 0.3569877, y: 0.17248917}
   m_EdgeRadius: 0
