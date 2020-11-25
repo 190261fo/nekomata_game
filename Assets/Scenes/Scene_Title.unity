@@ -480,6 +480,12 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.14901961
       objectReference: {fileID: 0}
+    - target: {fileID: 8160427929180434119, guid: c3c5c10d4da00c446a972dc66b7e4978,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: cd92528994c854146be849c73577299f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c5c10d4da00c446a972dc66b7e4978, type: 3}
 --- !u!1 &783559964
@@ -659,7 +665,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: cd92528994c854146be849c73577299f, type: 3}
     m_FontSize: 70
     m_FontStyle: 3
     m_BestFit: 0
@@ -991,7 +997,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -4584862287070709345, guid: dfecf2c18658c0b41872cd6a4c6047a1,
+      objectReference: {fileID: 21300000, guid: 5b4a73050660a7542950d3762691a4ce,
         type: 3}
     - target: {fileID: 8160427928163026822, guid: c3c5c10d4da00c446a972dc66b7e4978,
         type: 3}
@@ -1468,5 +1474,11 @@ PrefabInstance:
       propertyPath: m_Color.b
       value: 0.14901961
       objectReference: {fileID: 0}
+    - target: {fileID: 8160427929180434119, guid: c3c5c10d4da00c446a972dc66b7e4978,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: cd92528994c854146be849c73577299f,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3c5c10d4da00c446a972dc66b7e4978, type: 3}
