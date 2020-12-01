@@ -63,6 +63,7 @@
     <Compile Include="Assets\TyouchinGame\Scripts\LightButton.cs" />
     <Compile Include="Assets\TyouchinGame\Scripts\TyouchiLightsOutMain.cs" />
     <Compile Include="Assets\TyouchinGame\Scripts\SizeDropdown.cs" />
+    <Compile Include="Assets\Script\Change_tyouchin.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
