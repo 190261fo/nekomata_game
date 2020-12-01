@@ -64,8 +64,17 @@
     <Compile Include="Assets\TyouchinGame\Scripts\TyouchiLightsOutMain.cs" />
     <Compile Include="Assets\TyouchinGame\Scripts\SizeDropdown.cs" />
     <Compile Include="Assets\Script\Change_tyouchin.cs" />
+    <Compile Include="Assets\Fade\Scripts\Fade.cs" />
+    <Compile Include="Assets\Fade\Scripts\IFade.cs" />
+    <Compile Include="Assets\Fade\Scripts\FadeUI.cs" />
+    <Compile Include="Assets\Fade\Scripts\FadeImage.cs" />
+    <Compile Include="Assets\Script\FadePractice.cs" />
   </ItemGroup>
   <ItemGroup>
+     <None Include="Assets\Art\RuleImage_1080p\readme.txt" />
+     <None Include="Assets\Fade\Materials\UI-Fade-Cutout.shader" />
+     <None Include="Assets\Fade\Materials\UI-Mask.shader" />
+     <None Include="Assets\Fade\Materials\UI-Fade-Alpha.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.4f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
