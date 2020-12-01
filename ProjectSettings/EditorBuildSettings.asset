@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene_Title.unity
     guid: 1490cf72359df2449b24917a5ed91fd2
   - enabled: 1
-    path: Assets/Scenes/MainScene.unity
+    path: Assets/Scenes/GenjitsuScene.unity
+    guid: d23f87c69b9617a478058e14ec98f792
+  - enabled: 1
+    path: Assets/Scenes/IsekaiScene.unity
     guid: 6e2abfc71786db645a630cc5a4120491
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
