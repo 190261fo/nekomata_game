@@ -1,16 +1,19 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FadeTest : MonoBehaviour
+public class FadePractice : MonoBehaviour
 {
-    [SerializeField]
-    Fade fade = null;
+    public Fade fade;
 
-    public void OnClick()
+    private void Update()
     {
-        fade.FadeIn(1, () =>
+        if (Input.GetKeyDown(KeyCode.I))
         {
-            fade.FadeOut(1);
-        });
+            fade.FadeIn(1.0f, () => print("フェードイン完了"));
+        }
+        else if (Input.GetKeyDown(KeyCode.O))
+        {
+            fade.FadeOut(1.0f, () => print("フェードアウト完了"));
+        }
     }
 }
