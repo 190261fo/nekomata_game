@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 281512572609950786}
   m_Layer: 0
   m_Name: "\u30AB\u30C3\u30D1(\u4EEE)"
-  m_TagString: Untagged
+  m_TagString: Boss1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,7 +96,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.028289795, y: 0.11833525}
+  m_Offset: {x: 0.039058685, y: -0.4738388}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.55540645, y: 0.12962955}
@@ -107,5 +107,5 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.68955994, y: 0.46517277}
+  m_Size: {x: 2.2184448, y: 1.6495209}
   m_EdgeRadius: 0
