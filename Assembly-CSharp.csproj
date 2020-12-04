@@ -53,12 +53,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Script\HealthCollectible.cs" />
-    <Compile Include="Assets\Script\Change_tyouchin.cs" />
-    <Compile Include="Assets\Script\Change_option.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\SeManager.cs" />
     <Compile Include="Assets\Fade\Scripts\Fade.cs" />
     <Compile Include="Assets\Fade\Scripts\IFade.cs" />
-    <Compile Include="Assets\Script\Change_isekai.cs" />
     <Compile Include="Assets\Script\RubyController.cs" />
     <Compile Include="Assets\Fade\Scripts\FadeUI.cs" />
     <Compile Include="Assets\Script\FadePractice.cs" />
@@ -71,13 +68,13 @@
     <Compile Include="Assets\TyouchinAssets\Scripts\TyouchiLightsOutMain.cs" />
     <Compile Include="Assets\Fade\Scripts\FadeImage.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\Block.cs" />
-    <Compile Include="Assets\Script\Change_genjitsu.cs" />
     <Compile Include="Assets\Script\DamageZone.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\Bomb.cs" />
     <Compile Include="Assets\Script\EnemyController.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\BlockManager.cs" />
     <Compile Include="Assets\TyouchinAssets\Scripts\SizeDropdown.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\FeverManager.cs" />
+    <Compile Include="Assets\Script\ChangeScene.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Art\RuleImage_1080p\readme.txt" />
