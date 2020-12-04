@@ -23,7 +23,7 @@ public class ChangeScene : MonoBehaviour
     public void OnClickOptionButton()
     {
         // オプション画面 へ遷移
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("OptionScene");
     }
 
     void Update()
@@ -53,6 +53,10 @@ public class ChangeScene : MonoBehaviour
         {
             // 「5」クリックで 異世界 へ遷移
             SceneManager.LoadScene("IsekaiScene");
+        }
+        else if (Input.GetKeyDown(KeyCode.T))
+        {
+            SceneManager.LoadScene("TitleScene");
         }
     }
 }
