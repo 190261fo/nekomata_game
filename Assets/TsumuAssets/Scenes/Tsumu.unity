@@ -553,6 +553,11 @@ PrefabInstance:
       propertyPath: selectedBlocks.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8933585752088106947, guid: 0808e04702be4504c8eb166dafceec46,
+        type: 3}
+      propertyPath: blockViewHeight
+      value: 557
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0808e04702be4504c8eb166dafceec46, type: 3}
 --- !u!114 &289313237 stripped
