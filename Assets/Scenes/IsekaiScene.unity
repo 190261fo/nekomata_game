@@ -47053,7 +47053,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936713074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.50999904, y: -16, z: -10}
+  m_LocalPosition: {x: -0.51, y: -16, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -56669,6 +56669,7 @@ GameObject:
   - component: {fileID: 1449400670}
   - component: {fileID: 1449400682}
   - component: {fileID: 1449400681}
+  - component: {fileID: 1449400683}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -56689,7 +56690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 44.815796, y: 183}
+  scrollPos: {x: 43.18421, y: 183}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 505
@@ -56702,9 +56703,9 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1449400669}
-  selectedCommands:
-  - {fileID: 1449400682}
-  variables: []
+  selectedCommands: []
+  variables:
+  - {fileID: 1449400683}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -57141,6 +57142,21 @@ MonoBehaviour:
   move: 0
   shiftIntoPlace: 0
   waitUntilFinished: 1
+--- !u!114 &1449400683
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449400666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: Flag_RorateGame
+  value: 1
 --- !u!1001 &1455820048
 PrefabInstance:
   m_ObjectHideFlags: 0

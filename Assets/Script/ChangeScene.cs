@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement; //シーン切り替えに使用するライブラリ
+using System;
 
 public class ChangeScene : MonoBehaviour
 {
     // 「はじめる」をクリック
+
+
+    public Boolean Flag_RorateGame = false;
     public void OnClickStartButton()
     {
         // 現実世界 へ遷移
@@ -39,10 +43,10 @@ public class ChangeScene : MonoBehaviour
             // 「2」クリックで ミニゲーム2 へ遷移
             SceneManager.LoadScene("Tsumu");
         }
-        else if (Input.GetKeyDown("3"))
+        else if (Flag_RorateGame)
         {
             // 「3」クリックで ミニゲーム3 へ遷移
-            SceneManager.LoadScene("");
+            SceneManager.LoadScene("RoratePuzzle");
         }
         else if (Input.GetKeyDown("4"))
         {
