@@ -4276,7 +4276,7 @@ Transform:
   m_Children:
   - {fileID: 1417528283}
   m_Father: {fileID: 1787715390}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &252261902
 MonoBehaviour:
@@ -5184,6 +5184,57 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 287654762}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &289008478
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 289008479}
+  - component: {fileID: 289008480}
+  m_Layer: 0
+  m_Name: fungus_tengu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &289008479
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289008478}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1787715390}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &289008480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289008478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: "\u30C6\u30F3\u30B0"
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits:
+  - {fileID: 21300000, guid: f2d05818ec5e1674caf4878d964b534f, type: 3}
+  portraitsFace: 0
+  setSayDialog: {fileID: 1094356189}
+  description: 
 --- !u!1001 &291167493
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -47053,7 +47104,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936713074}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.51, y: -16, z: -10}
+  m_LocalPosition: {x: -0.5099971, y: -16, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -47631,7 +47682,7 @@ GameObject:
   - component: {fileID: 965411193}
   m_Layer: 0
   m_Name: fungus_nekomata
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50754,7 +50805,7 @@ RectTransform:
   m_Children:
   - {fileID: 1257288949}
   m_Father: {fileID: 1787715390}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -56721,6 +56772,11 @@ GameObject:
   - component: {fileID: 1449400682}
   - component: {fileID: 1449400681}
   - component: {fileID: 1449400683}
+  - component: {fileID: 1449400688}
+  - component: {fileID: 1449400687}
+  - component: {fileID: 1449400686}
+  - component: {fileID: 1449400685}
+  - component: {fileID: 1449400684}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -56741,10 +56797,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 43.18421, y: 183}
+  scrollPos: {x: 55.68421, y: 273}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 505
+  blockViewHeight: 285
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -56753,8 +56809,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1449400669}
-  selectedCommands: []
+  - {fileID: 1449400688}
+  selectedCommands:
+  - {fileID: 1449400685}
   variables:
   - {fileID: 1449400683}
   description: 
@@ -56808,8 +56865,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 68.31579
-    y: 70
+    x: 69.31579
+    y: 73
     width: 98
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -57208,6 +57265,137 @@ MonoBehaviour:
   scope: 1
   key: Flag_RorateGame
   value: 1
+--- !u!114 &1449400684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449400666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 13
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 1947468870}
+  character: {fileID: 289008480}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: f2d05818ec5e1674caf4878d964b534f, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 418229083}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &1449400685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449400666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 12
+  indentLevel: 0
+  storyText: 
+  description: 
+  character: {fileID: 0}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1449400686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449400666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 11
+  indentLevel: 0
+  storyText: "\u3053\u3093\u306B\u3061\u306F\uFF01"
+  description: 
+  character: {fileID: 965411193}
+  portrait: {fileID: 21300000, guid: 31722d76de9b5214ca7b9e08488c1fa6, type: 3}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
+--- !u!114 &1449400687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449400666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23faba06619da442a984c0c71a87df4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 1449400688}
+  suppressBlockAutoSelect: 1
+  tagFilter:
+  - Player
+  FireOn: 1
+  collisionVar: {fileID: 0}
+--- !u!114 &1449400688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1449400666}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d3d73aef2cfc4f51abf34ac00241f60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nodeRect:
+    serializedVersion: 2
+    x: 63.81579
+    y: -18
+    width: 82
+    height: 40
+  tint: {r: 1, g: 1, b: 1, a: 1}
+  useCustomTint: 0
+  itemId: 10
+  blockName: tengu
+  description: 
+  eventHandler: {fileID: 1449400687}
+  commandList:
+  - {fileID: 1449400684}
+  - {fileID: 1449400686}
+  - {fileID: 1449400685}
+  suppressAllAutoSelections: 0
 --- !u!1001 &1455820048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62145,6 +62333,7 @@ Transform:
   - {fileID: 965411192}
   - {fileID: 1809738723}
   - {fileID: 1248280095}
+  - {fileID: 289008479}
   - {fileID: 1094356194}
   - {fileID: 1947468869}
   - {fileID: 252261901}
@@ -65076,7 +65265,7 @@ Transform:
   m_Children:
   - {fileID: 464803963}
   m_Father: {fileID: 1787715390}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1947468870
 MonoBehaviour:
