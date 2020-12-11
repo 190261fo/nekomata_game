@@ -8,7 +8,7 @@ public class HealthCollectible : MonoBehaviour
     {
         //    Debug.Log("Object that entered the trigger : " + other);
 
-        RubyController controller = other.GetComponent<RubyController>();
+        NekomataController controller = other.GetComponent<NekomataController>();
 
         if (controller != null)
         {

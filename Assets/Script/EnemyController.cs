@@ -75,7 +75,7 @@ public class EnemyController : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D other)
     {
-        RubyController player = other.gameObject.GetComponent<RubyController >();
+        NekomataController player = other.gameObject.GetComponent<NekomataController>();
 
         if (player != null)
         {

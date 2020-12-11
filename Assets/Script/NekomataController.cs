@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RubyController : MonoBehaviour
+public class NekomataController : MonoBehaviour
 {
     //キャラの移動速度変更用
     public float speed = 3.0f;
@@ -181,5 +181,13 @@ public class RubyController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+    }
+
+    public void Stop()
+    {
+        rigidbody2d.velocity = Vector3.zero;
+        animator.SetFloat("Forward", 0);
+        animator.SetFloat("Turn", 0);
+        animator.SetBool("Crouch", false);
     }
 }
