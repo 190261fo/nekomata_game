@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Boss1
+  - Boss2
+  - Boss3
   layers:
   - Default
   - TransparentFX
@@ -13,9 +16,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Player
+  - Projectile
+  - Confiner
   - 
   - 
   - 
@@ -38,6 +41,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackGround
+    uniqueID: 432102043
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: 1
+    uniqueID: 759484561
+    locked: 0
+  - name: 2
+    uniqueID: 235770825
+    locked: 0
+  - name: 3
+    uniqueID: 3920514931
     locked: 0
