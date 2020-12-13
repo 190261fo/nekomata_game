@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 333756570}
   - component: {fileID: 333756569}
   - component: {fileID: 1723364647955150164}
+  - component: {fileID: 5882168143409064626}
   m_Layer: 0
   m_Name: Girl
   m_TagString: Untagged
@@ -117,7 +118,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10, y: 6}
+  m_Size: {x: 9, y: 6}
   m_EdgeRadius: 0
 --- !u!50 &333756568
 Rigidbody2D:
@@ -164,8 +165,10 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 333756575}
+  selectedCommands:
+  - {fileID: 5882168143409064626}
   variables: []
   description: 
   stepPause: 0
@@ -208,6 +211,7 @@ MonoBehaviour:
   - {fileID: 333756570}
   - {fileID: 333756569}
   - {fileID: 1723364647955150164}
+  - {fileID: 5882168143409064626}
   suppressAllAutoSelections: 0
 --- !u!114 &333756574
 MonoBehaviour:
@@ -392,3 +396,33 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &5882168143409064626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4151824944895315503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 7
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 0}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
