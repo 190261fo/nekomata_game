@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3858788138559812954}
   - component: {fileID: 3858788138559812953}
-  - component: {fileID: 3858788138559812932}
   - component: {fileID: 3858788138559812955}
   - component: {fileID: 6055388609967983530}
   - component: {fileID: 6055388609967983529}
@@ -26,9 +25,9 @@ GameObject:
   - component: {fileID: 6055388609967983526}
   - component: {fileID: 6055388609967983525}
   - component: {fileID: 6738851147615282949}
-  - component: {fileID: 6055388609967983513}
   - component: {fileID: 1791901031}
   - component: {fileID: 1791901033}
+  - component: {fileID: 782352924}
   m_Layer: 0
   m_Name: Hitodama
   m_TagString: Untagged
@@ -101,27 +100,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!50 &3858788138559812932
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3858788138559812952}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 0
-  m_CollisionDetection: 0
-  m_Constraints: 7
 --- !u!61 &3858788138559812955
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -294,9 +272,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 215.99994
-    y: -225.73425
-    width: 142.30768
+    x: 217.99994
+    y: -224.73425
+    width: 144
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -318,7 +296,7 @@ MonoBehaviour:
   - {fileID: 6738851147615282949}
   - {fileID: 1791901031}
   - {fileID: 6055388609967983525}
-  - {fileID: 6055388609967983513}
+  - {fileID: 782352924}
   suppressAllAutoSelections: 1
 --- !u!114 &6055388609967983523
 MonoBehaviour:
@@ -336,7 +314,7 @@ MonoBehaviour:
   scrollPos: {x: -125.49994, y: 478.73425}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 678
+  blockViewHeight: 596
   zoom: 1
   scrollViewRect:
     serializedVersion: 2
@@ -344,7 +322,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 6055388609967983532}
   selectedCommands: []
   variables: []
   description: 
@@ -553,74 +532,6 @@ MonoBehaviour:
   move: 1
   shiftIntoPlace: 0
   waitUntilFinished: 1
---- !u!114 &6055388609967983513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3858788138559812952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 13
-  indentLevel: 0
-  description: 
-  delay: 1
-  invokeType: 1
-  staticEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  booleanParameter:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  booleanEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ChangeScene, Assembly-CSharp
-        m_MethodName: OnClickStartButton
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  integerParameter:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  integerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  floatParameter:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  floatEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  stringParameter:
-    stringRef: {fileID: 0}
-    stringVal: 
-  stringEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1791901031
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -675,3 +586,31 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
+--- !u!114 &782352924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3858788138559812952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688e35811870d403f9e2b1ab2a699d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
+  description: "\u73FE\u5B9F\u4E16\u754C(\u4EBA\u9593\u306E\u4E16\u754C) \u3078\u9077\u79FB"
+  targetObject: {fileID: 0}
+  targetComponentAssemblyName: ChangeScene, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+    PublicKeyToken=null
+  targetComponentFullname: UnityEngine.Component[]
+  targetComponentText: ChangeScene
+  targetMethod: ChangeGenjitsu
+  targetMethodText: 'ChangeGenjitsu (): Void'
+  methodParameters: []
+  saveReturnValue: 0
+  returnValueVariableKey: 
+  returnValueType: System.Void
+  showInherited: 0
+  callMode: 0
