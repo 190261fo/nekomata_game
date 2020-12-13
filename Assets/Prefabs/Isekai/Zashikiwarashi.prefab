@@ -29,6 +29,8 @@ GameObject:
   - component: {fileID: 6000547441365113230}
   - component: {fileID: 6000547441365113229}
   - component: {fileID: 6000547441365113228}
+  - component: {fileID: 5450684916742441593}
+  - component: {fileID: 3945268906232776122}
   m_Layer: 0
   m_Name: Zashikiwarashi
   m_TagString: Boss2
@@ -153,8 +155,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 6000547441365113244}
-  selectedCommands:
-  - {fileID: 6000547441365113230}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -205,6 +206,8 @@ MonoBehaviour:
   - {fileID: 6000547441365113232}
   - {fileID: 6000547441365113231}
   - {fileID: 6000547441365113230}
+  - {fileID: 3945268906232776122}
+  - {fileID: 5450684916742441593}
   - {fileID: 6000547441365113229}
   suppressAllAutoSelections: 0
 --- !u!114 &6000547441365113243
@@ -639,3 +642,63 @@ MonoBehaviour:
   - Player
   FireOn: 1
   collisionVar: {fileID: 0}
+--- !u!114 &5450684916742441593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2418746935405492994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 34
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 0}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
+--- !u!114 &3945268906232776122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2418746935405492994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 33
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 0}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0

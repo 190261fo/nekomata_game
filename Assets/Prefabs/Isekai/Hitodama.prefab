@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3858788138559812954}
   - component: {fileID: 3858788138559812953}
   - component: {fileID: 3858788138559812955}
-  - component: {fileID: 6055388609967983530}
   - component: {fileID: 6055388609967983529}
   - component: {fileID: 6055388609967983528}
   - component: {fileID: 6055388609967983534}
@@ -28,6 +27,8 @@ GameObject:
   - component: {fileID: 1791901031}
   - component: {fileID: 1791901033}
   - component: {fileID: 782352924}
+  - component: {fileID: 4744633358945617375}
+  - component: {fileID: 782352941}
   m_Layer: 0
   m_Name: Hitodama
   m_TagString: Untagged
@@ -126,24 +127,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.475813, y: 0.97152424}
   m_EdgeRadius: 0
---- !u!114 &6055388609967983530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3858788138559812952}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c23faba06619da442a984c0c71a87df4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  parentBlock: {fileID: 6055388609967983532}
-  suppressBlockAutoSelect: 1
-  tagFilter:
-  - Player
-  FireOn: 1
-  collisionVar: {fileID: 0}
 --- !u!114 &6055388609967983529
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -281,7 +264,7 @@ MonoBehaviour:
   itemId: 0
   blockName: Hitodama_chart1
   description: 
-  eventHandler: {fileID: 6055388609967983530}
+  eventHandler: {fileID: 4744633358945617375}
   commandList:
   - {fileID: 6055388609967983533}
   - {fileID: 6055388609967983534}
@@ -324,9 +307,9 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 6055388609967983532}
-  selectedCommands:
-  - {fileID: 1791901031}
-  variables: []
+  selectedCommands: []
+  variables:
+  - {fileID: 782352941}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -615,3 +598,36 @@ MonoBehaviour:
   returnValueType: System.Void
   showInherited: 0
   callMode: 0
+--- !u!114 &4744633358945617375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3858788138559812952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c23faba06619da442a984c0c71a87df4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentBlock: {fileID: 6055388609967983532}
+  suppressBlockAutoSelect: 1
+  tagFilter:
+  - Player
+  FireOn: 1
+  collisionVar: {fileID: 0}
+--- !u!114 &782352941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3858788138559812952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 1
+  key: isTalking
+  value: 0

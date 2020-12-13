@@ -29,6 +29,8 @@ GameObject:
   - component: {fileID: 5264783629611895742}
   - component: {fileID: 5264783629611895741}
   - component: {fileID: 5264783629611895740}
+  - component: {fileID: 4904958250560347167}
+  - component: {fileID: 4300517097215221422}
   m_Layer: 0
   m_Name: Kappa
   m_TagString: Boss1
@@ -153,8 +155,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 5264783629611895756}
-  selectedCommands:
-  - {fileID: 5264783629611895742}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -180,7 +181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 59
+    x: 61
     y: 214
     width: 126
     height: 40
@@ -205,6 +206,8 @@ MonoBehaviour:
   - {fileID: 5264783629611895744}
   - {fileID: 5264783629611895743}
   - {fileID: 5264783629611895742}
+  - {fileID: 4300517097215221422}
+  - {fileID: 4904958250560347167}
   - {fileID: 5264783629611895741}
   suppressAllAutoSelections: 0
 --- !u!114 &5264783629611895755
@@ -553,7 +556,7 @@ MonoBehaviour:
   itemId: 13
   indentLevel: 0
   storyText: "\u5996\u529B\u3063\u3066\u5927\u4E8B\u306A\u3082\u306E\u3060\u304B\u3089\u3055\u30A1\n\u541B\u306B\u306A\u3089\u305D\u308C\u3092\u6E21\u3057\u3066\u3082\u3044\u3044
-    \u3063\u3066\u3001\u30AA\u30A4\u30E9\u306B\u601D\u308F\u305B\u3066\u307B\u3057\u3044\uFF01\n\u3064\u307E\u308A\u3001\u30AA\u30A4\u30E9\u304B\u3089\u306E\u8A66\u7DF4\u3092\u4E57\u308A\u8D8A\u3048\u3089\u308C\u305F\u3089\u3001\u5996\u529B\u3042\u3052\u308B\u3002\u3069\u3046\uFF1F"
+    \u3063\u3066\u3001\u30AA\u30A4\u30E9\u306B\u601D\u308F\u305B\u3066\u307B\u3057\u3044\uFF01\n\u3064\u307E\u308A\u3001\u30AA\u30A4\u30E9\u306E\u8A66\u7DF4\u3092\u4E57\u308A\u8D8A\u3048\u3089\u308C\u305F\u3089\u3001\u5996\u529B\u3042\u3052\u308B\u3002\u3069\u3046\uFF1F"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 21300000, guid: 9f5dee9143f9b1c4e8d752c4fbb5145a, type: 3}
@@ -640,3 +643,63 @@ MonoBehaviour:
   - Player
   FireOn: 1
   collisionVar: {fileID: 0}
+--- !u!114 &4904958250560347167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490047646053650062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 0}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
+--- !u!114 &4300517097215221422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 490047646053650062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 0}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class NekomataController : MonoBehaviour
 {
@@ -37,7 +38,7 @@ public class NekomataController : MonoBehaviour
         // Application.targetFrameRate = 10; // 10フレーム/1sに設定し直す
 
         rigidbody2d = GetComponent<Rigidbody2D>();
-
+        // rigidbody2d.constraints = RigidbodyConstraints2D.FreezeRotation;
         animator = GetComponent<Animator>();
 
         //スタート時はヘルスはMax
@@ -108,11 +109,11 @@ public class NekomataController : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal"); //入力を読み取るだけ に変更
         vertical = Input.GetAxis("Vertical");
         */
-
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
         Vector2 move = new Vector2(horizontal, vertical);
+        
 
         if(!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
         {
@@ -123,29 +124,33 @@ public class NekomataController : MonoBehaviour
         animator.SetFloat("Look X", lookDirection.x);
         animator.SetFloat("Look Y", lookDirection.y);
         animator.SetFloat("Speed", move.magnitude);
-        
+
         if (isInvincible)
         {
             //無敵時間を計りたい
             invincibleTimer -= Time.deltaTime;
             if (invincibleTimer < 0)
+            {
                 //無敵時間(現在は2秒)が終わったら、無敵状態じゃなくなる
                 isInvincible = false;
+            }
         }
 
-        if(Input.GetKeyDown(KeyCode.C))
-        {
-        Launch();
-        }
+        // if(Input.GetKeyDown(KeyCode.C))
+        // {
+        // Launch();
+        // }
     }
 
-    void FixedUpdate()
+    private void FixedUpdate()
     {
+        // 移動量を加算する
         Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
         position.y = position.y + speed * vertical * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+        
     }
 
     public void ChangeHealth(int amount)
@@ -181,13 +186,5 @@ public class NekomataController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
-    }
-
-    public void Stop()
-    {
-        rigidbody2d.velocity = Vector3.zero;
-        animator.SetFloat("Forward", 0);
-        animator.SetFloat("Turn", 0);
-        animator.SetBool("Crouch", false);
     }
 }

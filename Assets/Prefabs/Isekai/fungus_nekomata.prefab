@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 752060773625354100}
   - component: {fileID: 752060773625354101}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: fungus_nekomata
   m_TagString: Player
   m_Icon: {fileID: 0}

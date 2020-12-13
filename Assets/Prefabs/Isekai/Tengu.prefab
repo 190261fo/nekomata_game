@@ -29,6 +29,8 @@ GameObject:
   - component: {fileID: 1079710267922482479}
   - component: {fileID: 1079710267922482480}
   - component: {fileID: 1079710267922482481}
+  - component: {fileID: 1079710267922482463}
+  - component: {fileID: 1616136286139706766}
   m_Layer: 0
   m_Name: Tengu
   m_TagString: Boss3
@@ -307,7 +309,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: "\u306A\u3093\u3060\u3001\u77E5\u3089\u306C\u306E\u304B\u3002\n\u3055\u3066\u306F
     \u3053\u3061\u3089\u5074\u3078\u6765\u305F\u3070\u304B\u308A\u306E\u65B0\u7C73\u3058\u3083\u306A\uFF1F\n\u201C\u795E\u901A\u529B\u201D
-    \u3068\u306F\u3001\u795E\u3084\u7CBE\u970A\u306A\u3069\u304C\u4F7F\u3046 \u4EBA\u667A\u3092\u8D85\u3048\u305F\u7279\u6B8A\u306A\u529B\u306E\u3053\u3068\u3067\u3042\u308B"
+    \u306F\u3001\u795E\u3084\u7CBE\u970A\u304C\u4F7F\u3046 \u4EBA\u667A\u3092\u8D85\u3048\u305F\u7279\u6B8A\u306A\u529B\u3067\u3042\u308B\u305E"
   description: 
   character: {fileID: 0}
   portrait: {fileID: 21300000, guid: f2d05818ec5e1674caf4878d964b534f, type: 3}
@@ -577,7 +579,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 123
+    x: 124
     y: 180
     width: 126
     height: 40
@@ -602,6 +604,8 @@ MonoBehaviour:
   - {fileID: 1079710267922482467}
   - {fileID: 1079710267922482466}
   - {fileID: 1079710267922482465}
+  - {fileID: 1616136286139706766}
+  - {fileID: 1079710267922482463}
   - {fileID: 1079710267922482464}
   suppressAllAutoSelections: 0
 --- !u!114 &1079710267922482481
@@ -630,8 +634,7 @@ MonoBehaviour:
     height: 859
   selectedBlocks:
   - {fileID: 1079710267922482480}
-  selectedCommands:
-  - {fileID: 1079710267922482465}
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -643,3 +646,63 @@ MonoBehaviour:
   hideCommands: []
   luaEnvironment: {fileID: 0}
   luaBindingName: flowchart
+--- !u!114 &1079710267922482463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008476692885351986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 17
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 0}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
+--- !u!114 &1616136286139706766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008476692885351986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 16
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 0}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 0}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
