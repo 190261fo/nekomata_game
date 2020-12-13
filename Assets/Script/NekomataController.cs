@@ -23,12 +23,13 @@ public class NekomataController : MonoBehaviour
     float invincibleTimer;
 
     //宣言
-    Rigidbody2D rigidbody2d;
+    public Rigidbody2D rigidbody2d;
     float horizontal; 
     float vertical;
 
-    Animator animator;
-    Vector2 lookDirection = new Vector2(1,0);
+    public Animator animator;
+    public Vector2 lookDirection = new Vector2(1,0);
+    public Vector2 move;
 
     //開始関数(update関数の前に1度だけ呼び出される)
     void Start()
@@ -112,7 +113,7 @@ public class NekomataController : MonoBehaviour
         horizontal = Input.GetAxis("Horizontal");
         vertical = Input.GetAxis("Vertical");
 
-        Vector2 move = new Vector2(horizontal, vertical);
+        move = new Vector2(horizontal, vertical);
         
 
         if(!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
@@ -186,5 +187,12 @@ public class NekomataController : MonoBehaviour
         projectile.Launch(lookDirection, 300);
 
         animator.SetTrigger("Launch");
+    }
+
+    public void Stop()
+    {
+        move = Vector2.zero;
+        animator.SetFloat("Look X", 0);
+        animator.SetFloat("Look Y", 0);
     }
 }
