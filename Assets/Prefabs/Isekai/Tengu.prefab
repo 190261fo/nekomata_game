@@ -180,7 +180,7 @@ MonoBehaviour:
   fadeWhenDone: 1
   waitForClick: 1
   stopVoiceover: 1
-  waitForVO: 0
+  waitForVO: 1
   setSayDialog: {fileID: 0}
 --- !u!114 &1079710267922482466
 MonoBehaviour:
@@ -631,7 +631,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1079710267922482480}
   selectedCommands:
-  - {fileID: 1079710267922482464}
+  - {fileID: 1079710267922482465}
   variables: []
   description: 
   stepPause: 0
