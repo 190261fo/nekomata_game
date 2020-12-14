@@ -763,7 +763,7 @@ PrefabInstance:
         type: 3}
       propertyPath: maskTexture
       value: 
-      objectReference: {fileID: 2800000, guid: c426a62d7d7b2bb49b0f2cbb2dbc74ae, type: 3}
+      objectReference: {fileID: 2800000, guid: ecc21630e2bdfcc4fbab3cf742e24ac4, type: 3}
     - target: {fileID: 5530771036604103773, guid: 787e8516e5b274843ada6d46180a94ec,
         type: 3}
       propertyPath: m_Name
