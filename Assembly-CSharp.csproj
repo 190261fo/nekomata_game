@@ -52,7 +52,7 @@
     <UnityVersion>2020.1.4f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\HealthCollectible.cs" />
+    <Compile Include="Assets\Script\memo\HealthCollectible.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\DialougeManager.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\GameManager.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\SeManager.cs" />
@@ -60,11 +60,13 @@
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Fade\Scripts\IFade.cs" />
     <Compile Include="Assets\Script\NekomataController.cs" />
+    <Compile Include="Assets\Script\memo\PlayerController.cs" />
     <Compile Include="Assets\Fade\Scripts\FadeUI.cs" />
-    <Compile Include="Assets\Script\FadePractice.cs" />
+    <Compile Include="Assets\Script\memo\FadePractice.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\TyouchinAssets\Scripts\LightButton.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\Script\memo\playermove.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\NotificationManager.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\ClickSound.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
@@ -74,12 +76,13 @@
     <Compile Include="Assets\RoratePuzzle\Script\MainManager.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\PicScript.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\MenuManager.cs" />
-    <Compile Include="Assets\Script\Projectile.cs" />
+    <Compile Include="Assets\Script\memo\Projectile.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\ScoreManager.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\BgmManager.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\Timer.cs" />
+    <Compile Include="Assets\Script\memo\CharaController.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\RotateManager.cs" />
     <Compile Include="Assets\TyouchinAssets\Scripts\TyouchiLightsOutMain.cs" />
@@ -89,7 +92,7 @@
     <Compile Include="Assets\TsumuAssets\Scripts\Block.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_ExampleScript_01.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\ObjectSpin.cs" />
-    <Compile Include="Assets\Script\DamageZone.cs" />
+    <Compile Include="Assets\Script\memo\DamageZone.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\Bomb.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TextConsoleSimulator.cs" />
@@ -99,7 +102,7 @@
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
-    <Compile Include="Assets\Script\EnemyController.cs" />
+    <Compile Include="Assets\Script\memo\EnemyController.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\Script\ChangeScene.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
@@ -108,17 +111,19 @@
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\Script\memo\NPCController.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\BlockManager.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
+    <Compile Include="Assets\Script\memo\addThirdPersonCharacter.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TyouchinAssets\Scripts\SizeDropdown.cs" />
+    <Compile Include="Assets\Script\memo\NcpController.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\FeverManager.cs" />
-    <Compile Include="Assets\Script\NpcController.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
