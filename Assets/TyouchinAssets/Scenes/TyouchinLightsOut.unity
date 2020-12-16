@@ -134,7 +134,7 @@ PrefabInstance:
     - target: {fileID: 5316711568686693851, guid: 29238db360804734787c89dc5ddb787e,
         type: 3}
       propertyPath: m_Name
-      value: SayDialog
+      value: SayDialog_Tyouchin
       objectReference: {fileID: 0}
     - target: {fileID: 5316711568686693853, guid: 29238db360804734787c89dc5ddb787e,
         type: 3}
@@ -174,7 +174,7 @@ PrefabInstance:
     - target: {fileID: 5316711568686693853, guid: 29238db360804734787c89dc5ddb787e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5316711568686693853, guid: 29238db360804734787c89dc5ddb787e,
         type: 3}
@@ -512,7 +512,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &1543196219
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -527,7 +527,7 @@ MonoBehaviour:
   waitForFrames: 1
 --- !u!114 &1543196220
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -675,75 +675,6 @@ MonoBehaviour:
   offButtonColor: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 1}
   offButtonHighlightedColor: {r: 0.3773585, g: 0.3773585, b: 0.3773585, a: 1}
   clearText: {fileID: 511955626}
---- !u!1001 &1912780436
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048850, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5916247952558048851, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e,
-        type: 3}
-      propertyPath: m_Name
-      value: Stage
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 1b9f203ebd6ba5c4d8ff232a65bdc51e, type: 3}
 --- !u!1 &1965323788
 GameObject:
   m_ObjectHideFlags: 0
