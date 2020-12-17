@@ -2,17 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Fungus;
 
 public class FungusMessenger : MonoBehaviour
 {
-    // 表示・非表示の対象
-    public GameObject SetObj;
-    // 上記用のフラグ
-    public Boolean FlagActive = true;
-
     public Fungus.Flowchart flowchart = null;
     public string message = "";
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(UnityEngine.Collision2D collision)
     {
         if (flowchart && collision.gameObject.tag == "Player")
         {
@@ -20,15 +16,11 @@ public class FungusMessenger : MonoBehaviour
         }
     }
 
-    void Update()
+    private void OnCollisionEnter2D(Trigger2D trigger)
     {
-        // FlagActiveがtrueならオブジェクト表示
-        if (FlagActive)
+        if (flowchart && trigger.gameObject.tag == "Player")
         {
-            SetObj.SetActive(true);
-        } else
-        {
-            SetObj.SetActive(false);
+            flowchart.SendFungusMessage(message);
         }
     }
 }
