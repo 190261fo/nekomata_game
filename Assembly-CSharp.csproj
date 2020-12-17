@@ -124,6 +124,7 @@
     <Compile Include="Assets\TyouchinAssets\Scripts\SizeDropdown.cs" />
     <Compile Include="Assets\Script\memo\NcpController.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\FeverManager.cs" />
+    <Compile Include="Assets\Script\FungusMessenger.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
