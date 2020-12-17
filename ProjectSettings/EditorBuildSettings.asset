@@ -9,8 +9,8 @@ EditorBuildSettings:
     path: Assets/Scenes/TitleScene.unity
     guid: 1490cf72359df2449b24917a5ed91fd2
   - enabled: 1
-    path: Assets/Op/OptionScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Options_Asset/Scenes/OptionScene.unity
+    guid: 19d74001a4a5dc3449d56642891af325
   - enabled: 1
     path: Assets/Scenes/GenjitsuScene.unity
     guid: d23f87c69b9617a478058e14ec98f792
