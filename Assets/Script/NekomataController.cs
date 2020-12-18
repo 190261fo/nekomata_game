@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using Fungus;
 
 public class NekomataController : MonoBehaviour
 {
@@ -14,7 +15,12 @@ public class NekomataController : MonoBehaviour
     float vertical;
 
     public Animator animator;
-    public Vector2 lookDirection = new Vector2(0,0);
+    public Vector2 lookDirection = new Vector2(0,-1);
+    Vector2 move;
+
+    //会話用
+    public Flowchart flowchart1;
+    public Flowchart flowchart2;
 
     //開始関数(update関数の前に1度だけ呼び出される)
     void Start()
@@ -42,7 +48,7 @@ public class NekomataController : MonoBehaviour
         */
         //-> 新しいフレーム(デフォルトは60/1s)毎に、現在位置が0.1右へ書き出される -> 連続的に右へ移動してるように見える
 
-        
+
         /*
         float:小数点付きの数値を格納する変数
         Input.GetAxis("Horizontal"): ProjectSetting -> InputManager -> 水平方向Horaizotal を取得する関数(GetAxis関数)
@@ -75,30 +81,45 @@ public class NekomataController : MonoBehaviour
         // (毎秒10フレームの場合、各フレームには0.1秒。60フレームは、各0.017秒かかる)
         // レンダリングされたフレーム数に関係なく、キャラクターは同じ速度で実行される。現在は「フレーム非依存」
 
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
-
-        Vector2 move = new Vector2(horizontal, vertical);
-        
-
-        if(!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+        if (flowchart1.GetBooleanVariable("IsTalking") || flowchart2.GetBooleanVariable("IsTalking"))
         {
-            lookDirection.Set(move.x, move.y);
-            lookDirection.Normalize();
+            //Debug.Log("Don't move!");
+
+            move = new Vector2(0, 0);
+            animator.SetFloat("Speed", move.magnitude);
         }
-                
-        animator.SetFloat("Look X", lookDirection.x);
-        animator.SetFloat("Look Y", lookDirection.y);
-        animator.SetFloat("Speed", move.magnitude);
+        else
+        {
+            horizontal = Input.GetAxis("Horizontal");
+            vertical = Input.GetAxis("Vertical");
+
+            move = new Vector2(horizontal, vertical);
+
+            if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
+            {
+                lookDirection.Set(move.x, move.y);
+                lookDirection.Normalize();
+            }
+
+            animator.SetFloat("Look X", lookDirection.x);
+            animator.SetFloat("Look Y", lookDirection.y);
+            animator.SetFloat("Speed", move.magnitude);
+        }
     }
 
     private void FixedUpdate()
     {
-        // 移動量を加算する
-        Vector2 position = rigidbody2d.position;
-        position.x = position.x + speed * horizontal * Time.deltaTime;
-        position.y = position.y + speed * vertical * Time.deltaTime;
+        if (flowchart1.GetBooleanVariable("IsTalking") || flowchart2.GetBooleanVariable("IsTalking"))
+        {
+        }
+        else
+        {
+            // 移動量を加算する
+            Vector2 position = rigidbody2d.position;
+            position.x = position.x + speed * horizontal * Time.deltaTime;
+            position.y = position.y + speed * vertical * Time.deltaTime;
 
-        rigidbody2d.MovePosition(position);
+            rigidbody2d.MovePosition(position);
+        }
     }
 }
