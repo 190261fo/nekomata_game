@@ -71,7 +71,6 @@
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventHandler.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-    <Compile Include="Assets\TsumuAssets\Scripts\TimeManager.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\MainManager.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\PicScript.cs" />
     <Compile Include="Assets\RoratePuzzle\Script\MenuManager.cs" />
@@ -118,9 +117,9 @@
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
     <Compile Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TyouchinAssets\Scripts\SizeDropdown.cs" />
+    <Compile Include="Assets\Script\TitleSound.cs" />
     <Compile Include="Assets\Options_Asset\Script\SoundPresenter.cs" />
     <Compile Include="Assets\TsumuAssets\Scripts\FeverManager.cs" />
-    <Compile Include="Assets\Script\TitleSound.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\RoratePuzzle\Font\TextMesh Pro\Examples &amp; Extras\Fonts\Oswald-Bold - OFL.txt" />
