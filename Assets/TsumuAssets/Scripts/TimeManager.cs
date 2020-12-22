@@ -24,7 +24,7 @@ public class TimeManager : MonoBehaviour {
 		if (FlagTimeStart) {
 			if (canvas != null) {
 				// 制限時間
-				time = 60;
+				time = 5;
 				Transform timeGUI = canvas.transform.Find ("TimeGUI");
 				Transform finishGUI = canvas.transform.Find ("FinishGUI");
 				Transform resultGUI = canvas.transform.Find ("ResultGUI");
@@ -48,7 +48,7 @@ public class TimeManager : MonoBehaviour {
 			time = 0;
 			SyncfinishGUI ();
 			SyncResultGUI ();
-			// audioSource.PlayOneShot(resultSE);
+			AudioManager.GetInstance().PlaySound(14);
 		}
 		SyncTimeGUI ();
 	}

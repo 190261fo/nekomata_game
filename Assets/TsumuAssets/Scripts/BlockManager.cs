@@ -9,23 +9,16 @@ public class BlockManager: MonoBehaviour {
 
 	public GameObject blockPrefab;
 	public GameObject bombPrefab;
-	public AudioClip startSE;
-	public AudioClip blockSE;
-	public AudioClip bombGenSE;
-	// public AudioClip bombSE;
 
 	GameObject firstBlock;
 	GameObject lastBlock;
 	List<GameObject> removeBlockList = new List<GameObject> ();
-
-	AudioSource audioSource;
 
 	ScoreManager scoreManager;
 	FeverManager feverManager;
 	TimeManager timeManager;
 
 	void Start () {
-		audioSource = gameObject.GetComponent<AudioSource> ();
 		StartCoroutine (GenerateBlocks (60));
 		scoreManager = gameObject.AddComponent<ScoreManager> ();
 		feverManager = gameObject.AddComponent<FeverManager> ();
@@ -44,7 +37,7 @@ public class BlockManager: MonoBehaviour {
 	}        
 
 	public void TimeStart() {
-		audioSource.PlayOneShot(startSE);
+		AudioManager.GetInstance().PlaySound(10);
 		timeManager.FlagTimeStart = true;
 		timeManager.Start();
 	}
@@ -89,11 +82,11 @@ public class BlockManager: MonoBehaviour {
 		int count = removeBlockList.Count;
 		if (count >= 3) {
 			OnBlockClear(count);
-			audioSource.PlayOneShot(blockSE);
+			AudioManager.GetInstance().PlaySound(12);
 			// 6個以上でボム生成
 			if (count >= 6) { 
 				GenerateBomb (lastBlock.transform.position);
-				audioSource.PlayOneShot(bombGenSE);
+				AudioManager.GetInstance().PlaySound(11);
 			}
 			ClearRemoveBlockList ();
 		} else {
