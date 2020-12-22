@@ -7,30 +7,48 @@ using UnityEngine.SceneManagement;
 
 public class BlockManager: MonoBehaviour {
 
+	Text timeText;
+	Text finishText;
+	Text resultText;
+	float time = 1000;
+	public Boolean FlagTimeStart = false;
+	public Boolean isRunning = true;
+
 	public GameObject blockPrefab;
 	public GameObject bombPrefab;
-	public AudioClip startSE;
-	public AudioClip blockSE;
-	public AudioClip bombGenSE;
-	// public AudioClip bombSE;
 
 	GameObject firstBlock;
 	GameObject lastBlock;
 	List<GameObject> removeBlockList = new List<GameObject> ();
 
-	AudioSource audioSource;
-
 	ScoreManager scoreManager;
 	FeverManager feverManager;
-	TimeManager timeManager;
 
 	void Start () {
-		audioSource = gameObject.GetComponent<AudioSource> ();
 		StartCoroutine (GenerateBlocks (60));
 		scoreManager = gameObject.AddComponent<ScoreManager> ();
 		feverManager = gameObject.AddComponent<FeverManager> ();
-		timeManager = gameObject.AddComponent<TimeManager> ();
-		feverManager.RegisterOnFeverCallBack (() => timeManager.AddTime(5));
+		feverManager.RegisterOnFeverCallBack (() => AddTime(5));
+		GameObject canvas = GameObject.Find ("Canvas");
+		if (FlagTimeStart) {
+			if (canvas != null) {
+				// 制限時間
+				time = 5;
+				Transform timeGUI = canvas.transform.Find ("TimeGUI");
+				Transform finishGUI = canvas.transform.Find ("FinishGUI");
+				Transform resultGUI = canvas.transform.Find ("ResultGUI");
+				if (timeGUI != null) {
+					timeText = timeGUI.GetComponent<Text> ();
+					SyncTimeGUI ();
+				}
+				if (finishGUI != null) {
+					finishText = finishGUI.GetComponent<Text> ();
+				}
+				if (resultGUI != null) {
+        			resultText = resultGUI.GetComponent<Text> ();
+      			}
+			}
+		}
 	}
 
 	void Update () {
@@ -41,13 +59,55 @@ public class BlockManager: MonoBehaviour {
 		} else if (Input.GetMouseButtonUp (0) && firstBlock) {
 			OnDragEnd ();
 		}
+		time -= Time.deltaTime;
+		if (time < 0) {
+			time = 0;
+			if (isRunning == true) {
+                AudioManager.GetInstance().PlaySound(14);
+                isRunning = false;
+            }
+			SyncfinishGUI ();
+			SyncResultGUI ();
+		}
+		SyncTimeGUI ();
 	}        
 
 	public void TimeStart() {
-		audioSource.PlayOneShot(startSE);
-		timeManager.FlagTimeStart = true;
-		timeManager.Start();
+		AudioManager.GetInstance().PlaySound(10);
+		FlagTimeStart = true;
+		Start();
 	}
+
+	public void AddTime(float deltaTime) {
+		time += deltaTime;
+	}
+
+	void SyncTimeGUI() {
+		if (timeText != null) {
+			timeText.text = "残り" + ((int)time).ToString () + "秒";
+		}
+	}
+
+	void SyncfinishGUI() {
+		if (finishText != null) {
+			// audioSource.PlayOneShot(resultSE);
+			finishText.text = "そこまで！！";
+		}
+	}
+
+	public void SyncResultGUI() {
+  		if (resultText != null) {
+    		if (int.Parse(scoreManager.scoreText.text) >= 150000){
+      			resultText.text = "クリアSSS"; 
+    		} else if (int.Parse(scoreManager.scoreText.text) >= 100000){
+      			resultText.text = "クリアS";
+    		} else if (int.Parse(scoreManager.scoreText.text) >= 80000){
+      			resultText.text = "クリアA";
+    		} else {
+      			resultText.text = "クリア失敗";
+			}
+    	}
+  	}
 
 	IEnumerator GenerateBlocks(int n){
 		for (int i = 0; i < n; i++) {
@@ -64,7 +124,7 @@ public class BlockManager: MonoBehaviour {
 	}
 
 	void OnDragStart() {
-		if (timeManager.time != 0) {
+		if (time != 0) {
 			GameObject newBlock = MousedOverBlock();
 			if (newBlock != null) {
 				firstBlock = newBlock;
@@ -89,11 +149,11 @@ public class BlockManager: MonoBehaviour {
 		int count = removeBlockList.Count;
 		if (count >= 3) {
 			OnBlockClear(count);
-			audioSource.PlayOneShot(blockSE);
+			AudioManager.GetInstance().PlaySound(12);
 			// 6個以上でボム生成
 			if (count >= 6) { 
 				GenerateBomb (lastBlock.transform.position);
-				audioSource.PlayOneShot(bombGenSE);
+				AudioManager.GetInstance().PlaySound(11);
 			}
 			ClearRemoveBlockList ();
 		} else {
