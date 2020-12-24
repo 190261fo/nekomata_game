@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Fungus;
 
 public class AudioManager : MonoBehaviour {
     
@@ -10,6 +11,8 @@ public class AudioManager : MonoBehaviour {
 
     [SerializeField] AudioClip[] seList;
     [SerializeField] AudioSource audioSourceSE;
+
+    public WriterAudio writerAudio;
 
     public float BGMVolume {
         get { return audioSourceBGM.volume; }
