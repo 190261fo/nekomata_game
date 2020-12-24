@@ -12,12 +12,14 @@ public class LightButton : MonoBehaviour
 
 	void Start()
 	{
+		AudioManager.GetInstance().PlayBGM(9);
 		main = GameObject.FindGameObjectWithTag("GameController").GetComponent<TyouchiLightsOutMain>();
 	}
 
 	public void OnClick()
 	{
 		main.SwitchLights(row, col, false);
+		AudioManager.GetInstance().PlaySound(0);
 	}
 
 }
