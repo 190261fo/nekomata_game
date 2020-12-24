@@ -147,6 +147,7 @@ public class PicScript : MonoBehaviour
 
     public void clickOnSound()
     {
-        puzzle.PlayOneShot(soundRorate);
+        // puzzle.PlayOneShot(soundRorate);
+        AudioManager.GetInstance().PlaySound(31);
     }
 }

@@ -11,6 +11,7 @@ public class ClickSound : MonoBehaviour
     // Start is called before the first frame update
     public void click()
     {
-        button.PlayOneShot(ClickS);
+        // button.PlayOneShot(ClickS);
+        AudioManager.GetInstance().PlaySound(30);
     }
 }
